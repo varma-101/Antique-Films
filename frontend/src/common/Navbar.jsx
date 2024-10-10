@@ -1,8 +1,10 @@
 import React from 'react'
+import '../styles/Navbar.css'
 
 const Navbar = () => {
   return (
-    <div>
+    <>
+         <div className="navbar">
         <div className='left-nav'>
             <ul>
                 <li>Home</li>
@@ -19,7 +21,11 @@ const Navbar = () => {
                 <li><button>Let's Talk</button></li>
             </ul>
         </div>
+        
     </div>
+    <hr></hr>
+    </>
+   
   )
 }
 

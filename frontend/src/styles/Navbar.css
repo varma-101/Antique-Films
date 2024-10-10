@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    margin-top: -1rem;
+}
+
+.left-nav ul,
+.right-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.left-nav ul li,
+.right-nav ul li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin: 1rem;
+}
+
+
+.left-nav ul li:hover,
+.right-nav ul li:hover {
+    color: #f9a825;
+}
+
+.logo p {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: "Italiana";
+    margin-top: 20px;
+}
+
+.right-nav ul li button {
+    padding: 10px 20px;
+    background-color: #f9a825;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.right-nav ul li button:hover {
+    background-color: #ffc107;
+}
+
+hr{
+    margin: -15px 2.8rem 10px 2.8rem;
+}
