@@ -9,8 +9,15 @@
     z-index: -1; /* Ensures it stays behind the navbar */
   }
   
+  .carousel{
+    position: relative;
+    z-index: 0;
+  }
   .carousel img {
     object-fit: cover;
     height: 100vh;
   }
+
+
+
   
