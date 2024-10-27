@@ -4,8 +4,8 @@ import '../styles/Hero.css';
 
 const Hero = () => {
   return (
-    <Carousel>
-      <Carousel.Item>
+    <Carousel interval={3000}>
+      <Carousel.Item >
         <img src="https://res.cloudinary.com/dvsometal/image/upload/f_auto,q_auto/v1/Antique-films/cw9ptwvdq3dpxvazap0x" className="d-block w-100" alt="First slide" />
       </Carousel.Item>
       <Carousel.Item>
