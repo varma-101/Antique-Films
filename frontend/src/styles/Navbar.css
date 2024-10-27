@@ -26,8 +26,8 @@
 }
 
 .logo img {
-    height: 80px;
-    width: 180px; 
+    height: 70px;
+    width: 150px; 
 }
 
 .nav {
@@ -55,7 +55,7 @@
 }
 
 .nav ul li:hover {
-    color: #ED2425;
+    color: #9B7EBD; /* Updated hover color */
 }
 
 .nav-button {
@@ -63,6 +63,7 @@
     display: flex;
     justify-content: flex-end;
     margin-right: 2rem;
+    z-index: 10;
 }
 
 .nav-button button {
