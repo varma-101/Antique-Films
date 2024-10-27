@@ -1,28 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
 
 .nav-component {
     width: 100vw;
     position: fixed;
     top: 0;
-    z-index: 1; /* Ensures it stays above the carousel */
+    z-index: 1;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 30px;
-    background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
-    backdrop-filter: blur(5px); /* Adds a blur effect to improve readability */
+    padding: 15px 50px;
+    background-color: transparent;
 }
 
-.navbar .logo {
+.logo {
+    flex: 1;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: "Italiana", serif;
+    color: #ffffff;
     margin-left: 2rem;
+}
+
+.logo img {
+    height: 100px;
+    width: auto; 
+}
+
+.nav {
+    flex: 2;
+    display: flex;
+    justify-content: center;
 }
 
 .nav ul {
     display: flex;
-    gap: 20px;
+    gap: 40px; /* Increased gap between items */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -34,30 +50,33 @@
     transition: color 0.3s ease;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+    color: #ffffff;
+    font-size: 18px; /* Increased font size */
 }
 
 .nav ul li:hover {
-    color: #f9a825;
+    color: #ED2425; /* Updated hover color */
 }
 
-.logo p {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-family: "Italiana", serif;
-    color: #ffffff;
+.nav-button {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
 }
 
-.nav ul li button {
+.nav-button button {
     padding: 10px 20px;
-    background-color: #f9a825;
-    border: none;
-    border-radius: 12px;
+    background-color: transparent; /* Transparent background */
+    color: #ffffff; /* White text */
+    border: 1px solid #ffffff; /* White border */
+    border-radius: 6px; /* Reduced border radius */
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav ul li button:hover {
-    background-color: #ffc107;
+.nav-button button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slight transparent background on hover */
+    color: #f9a825; /* Text color change on hover */
 }
