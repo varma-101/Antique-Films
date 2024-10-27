@@ -26,8 +26,8 @@
 }
 
 .logo img {
-    height: 100px;
-    width: auto; 
+    height: 80px;
+    width: 180px; 
 }
 
 .nav {
@@ -38,11 +38,12 @@
 
 .nav ul {
     display: flex;
-    gap: 40px; /* Increased gap between items */
+    gap: 40px;
     list-style: none;
     padding: 0;
     margin: 0;
     align-items: center;
+    gap:80px;
 }
 
 .nav ul li {
