@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="nav-component">
       <div className="navbar">
         <div className="logo">
-          <img src="https://res.cloudinary.com/dvsometal/image/upload/f_auto,q_auto/v1/Antique-films/otybhnbmxx2zfccyrph7" alt="" />
+          <img src="https://res.cloudinary.com/dvsometal/image/upload/f_auto,q_auto/v1/Antique-films/otybhnbmxx2zfccyrph7" alt="Antique Films Logo" />
         </div>
         <div className="nav">
           <ul>

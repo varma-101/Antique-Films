@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
 
 .nav-component {
     width: 100vw;
@@ -43,20 +43,19 @@
     padding: 0;
     margin: 0;
     align-items: center;
-    gap:80px;
 }
 
 .nav ul li {
     cursor: pointer;
     transition: color 0.3s ease;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     font-weight: 500;
+    font-size: 18px;
     color: #ffffff;
-    font-size: 18px; /* Increased font size */
 }
 
 .nav ul li:hover {
-    color: #ED2425; /* Updated hover color */
+    color: #ED2425;
 }
 
 .nav-button {
@@ -68,16 +67,16 @@
 
 .nav-button button {
     padding: 10px 20px;
-    background-color: transparent; /* Transparent background */
-    color: #ffffff; /* White text */
-    border: 1px solid #ffffff; /* White border */
-    border-radius: 6px; /* Reduced border radius */
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-button button:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Slight transparent background on hover */
-    color: #f9a825; /* Text color change on hover */
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #f9a825;
 }
