@@ -18,7 +18,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="nav-button">
-          <button>Let's Talk</button>
+          <button style={{fontFamily:'Montserrat'}}>Let's Talk</button>
         </div>
       </div>
     </div>
