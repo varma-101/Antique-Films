@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the Hero section if needed */
 .hero-carousel {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -1; /* Ensures it stays behind the navbar */
-  }
-  
-  .carousel{
-    position: relative;
-    z-index: 0;
-  }
-  .carousel img {
-    object-fit: cover;
-    height: 100vh;
-  }
+  @apply absolute top-0 left-0 w-full h-screen z-[-1]; /* If needed */
+}
+
+.carousel {
+  position: relative;
+  z-index: 0;
+}
+
+.carousel img {
+  object-fit: cover;
+  height: 100vh; /* Ensures images occupy full height of viewport */
+}
