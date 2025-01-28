@@ -1,8 +1,8 @@
 import './App.css'
-import Book from './book/Book';
-import Gallery from './gallery/Gallery';
-import About from './about/About';
-import Home from './home/Home';
+import Book from './components/book/Book';
+import Gallery from './components/gallery/Gallery';
+import About from './components/about/About';
+import Home from './components/home/Home';
 
 function App() {
 
