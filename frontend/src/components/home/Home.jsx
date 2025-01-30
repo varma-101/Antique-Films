@@ -1,8 +1,13 @@
+import Hero from "./Hero";
+import Events from "./Events";
+import "../styles/Home.css";
+
 function Home() {
 
     return (
       <>
-        <h1>Home Page</h1>
+        <Hero/>
+        <Events/>
       </>
     )
   }

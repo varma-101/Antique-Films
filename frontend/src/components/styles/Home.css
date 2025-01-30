@@ -1,0 +1,34 @@
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.hero-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-head{
+    text-align: center;
+    padding-top: 14rem;
+}
+
+.hero-content{
+    text-align: justify;
+    height: 500px;
+    width: 500px;
+    padding-left: 4.9rem;
+    font-size: 1.15rem;
+}
+
+.chat-btn{
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+    border: 2px solid #D4AF37;
+    background-color: white;
+    color: #D4AF37;
+    font-size: 1.13rem;
+    padding-bottom: 15px;
+    margin-left: 19rem;
+}
