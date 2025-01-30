@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+
+
+header{
+    display: flex;
+}
+
+.logo{
+    width:150px;
+    height: 150px;
+    margin-top: -25px;
+    margin-left: 10px;
+}
+
+.orb{
+    width: 1000px;
+    height:1000px;
+    background-color: #D4AF37;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius:100% ;
+    margin-top: -700px;
+    margin-right: -150px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 100px;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 25px;
+}
+
+ nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: #ffffff;
+    transition: .4s;
+}
+
+a.active{
+    color: #ffffff;
+}
+
+.book{
+    font-weight: 600;
+}
+
