@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -59,4 +59,39 @@ a.active{
 .book{
     font-weight: 600;
 }
+
+
+@media(max-width: 1000px){
+    .orb{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        justify-content: flex-start;
+        width: 200px;
+        height: 500px;
+        gap: 50px;
+        z-index: 999;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.2);
+        padding-left: 5%;
+        padding-top: 4%;
+        box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    }
+
+    a.active{
+        color: #D4AF37;
+
+    }
+
+    a:hover{
+        color: #D4AF37;
+        transition: .4s;
+    }
+}
+
+
 

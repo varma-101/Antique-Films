@@ -1,16 +1,19 @@
 .hero{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    align-items: center;
 }
 
 .hero-right{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .hero-head{
     text-align: center;
-    padding-top: 14rem;
+    padding-top: 13rem;
 }
 
 .hero-content{
@@ -29,6 +32,6 @@
     background-color: white;
     color: #D4AF37;
     font-size: 1.13rem;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     margin-left: 19rem;
 }
