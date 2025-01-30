@@ -8,12 +8,11 @@
 .hero-right{
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .hero-head{
     text-align: center;
-    padding-top: 13rem;
+    padding-top: 14rem;
 }
 
 .hero-content{
@@ -34,4 +33,8 @@
     font-size: 1.13rem;
     padding-bottom: 5px;
     margin-left: 19rem;
+}
+
+.cam{
+    margin-top: -3rem;
 }
