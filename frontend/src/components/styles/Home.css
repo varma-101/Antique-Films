@@ -1,29 +1,30 @@
-.hero{
+.hero {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     align-items: center;
 }
 
-.hero-right{
+.hero-right {
     display: flex;
     flex-direction: column;
 }
 
-.hero-head{
+.hero-head {
     text-align: center;
-    padding-top: 14rem;
+    font-size: 2.2rem; /* Default font size */
+    margin-bottom: 1rem; /* Space below the heading */
 }
 
-.hero-content{
+.hero-content {
     text-align: justify;
-    height: 500px;
-    width: 500px;
-    padding-left: 4.9rem;
+    width: 600px;
+    padding-left: 6rem;
     font-size: 1.15rem;
+    line-height: 1.6; /* Improve readability */
 }
 
-.chat-btn{
+.chat-btn {
     height: 50px;
     width: 200px;
     border-radius: 50px;
@@ -32,9 +33,119 @@
     color: #D4AF37;
     font-size: 1.13rem;
     padding-bottom: 5px;
-    margin-left: 19rem;
+    margin-left: 25rem;
 }
 
-.cam{
+.cam {
+    width: 800px; /* Default width */
+    height: auto; /* Maintain aspect ratio */
     margin-top: -3rem;
+}
+
+/* Media Queries for 13-inch Laptops */
+@media (max-width: 1440px) {
+    .hero-head {
+        font-size: 2rem; /* Reduce font size */
+        padding-top: 4rem; /* Adjust padding */
+    }
+
+    .hero-content {
+        width: 500px; /* Reduce width */
+        padding-left: 4rem; /* Reduce padding */
+        font-size: 1rem; /* Reduce font size */
+    }
+
+    .cam {
+        width: 600px; /* Reduce image width */
+    }
+
+    .chat-btn {
+        width: 180px; /* Reduce button width */
+        font-size: 1rem; /* Reduce font size */
+        margin-left: 15rem; /* Adjust margin */
+    }
+}
+
+@media (max-width: 1180px) {
+    .hero-head{
+        font-size: 1.75rem;
+    }
+
+    .hero-content {
+        width: 400px; /* Further reduce width */
+        margin-left: 3rem;
+    }
+
+    .hero-content{
+        padding-left: 1rem;
+    }
+}
+
+/* Media Queries for Tablets */
+@media (max-width: 1024px) {
+    .hero-head {
+        font-size: 1.75rem; /* Further reduce font size */
+        padding-top: 2rem; /* Adjust padding */
+    }
+
+    .hero-content {
+        width: 400px; /* Further reduce width */
+        padding-left: 2rem; /* Further reduce padding */
+    }
+
+    .cam {
+        width: 500px; /* Further reduce image width */
+    }
+
+    .chat-btn {
+        width: 160px; /* Further reduce button width */
+        margin-left: 10rem; /* Adjust margin */
+    }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr; /* Switch to single column */
+        gap: 1rem; /* Reduce gap */
+        text-align: center; /* Center align content */
+    }
+
+    .hero-head {
+        font-size: 1.5rem; /* Reduce font size */
+        margin-top: -9rem;
+        text-align: center; /* Center align text */
+    }
+
+    .hero-content {
+        display: none; /* Hide hero-content */
+    }
+
+    .cam {
+        width: 735px; /* Further reduce image width */
+        margin-top: 0; /* Remove negative margin */
+    }
+
+    .chat-btn {
+        width: 140px; /* Further reduce button width */
+        margin: 1rem auto; /* Center the button */
+    }
+}
+
+/* Media Queries for Small Mobile Devices */
+@media(max-width: 480px){
+    .hero-head {
+        margin-top: -5rem;
+        font-size: 1rem;
+    }
+
+    .cam {
+        width: 400px;
+        height: auto; /* Further reduce image width */
+    }
+
+    .chat-btn {
+        width: 120px; /* Further reduce button width */
+        font-size: 0.9rem; /* Further reduce font size */
+    }
 }
