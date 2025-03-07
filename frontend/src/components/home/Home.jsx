@@ -1,5 +1,7 @@
 import Hero from "./Hero";
 import Events from "./Events";
+import Portfolio from "./Portfolio";
+import Plans from "./Plans";
 import "../styles/Home.css";
 
 function Home() {
@@ -8,6 +10,8 @@ function Home() {
       <>
         <Hero/>
         <Events/>
+        <Portfolio/>
+        <Plans/>
       </>
     )
   }

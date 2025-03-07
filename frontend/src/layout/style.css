@@ -10,12 +10,19 @@ body{
 
 header{
     display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    height: 80px; /* Reduced height */
+    align-items: center; /* Center items vertically */
 }
 
 .logo{
     width:150px;
     height: 150px;
-    margin-top: -25px;
+    margin-top: -5px; /* Adjusted to maintain visual position */
     margin-left: 10px;
 }
 
@@ -30,6 +37,15 @@ header{
     margin-top: -700px;
     margin-right: -150px;
     margin-bottom: 0px;
+    z-index: -9999;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 80px; /* Match header height */
 }
 
 ul{
@@ -37,12 +53,14 @@ ul{
     list-style-type: none;
     gap: 100px;
     position: absolute;
-    top: 30px;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
     right: 50px;
     font-size: 25px;
+    z-index: 1000;
 }
 
- nav ul li a{
+nav ul li a{
     text-decoration: none;
     color: inherit;
 }
@@ -80,6 +98,8 @@ a.active{
         padding-left: 5%;
         padding-top: 4%;
         box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+        transform: none; /* Remove vertical centering in mobile */
+        top: 0; /* Reset top position */
     }
 
     a.active{
@@ -95,3 +115,53 @@ a.active{
 
 
 
+/* Hamburger menu icon */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Close icon styling */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Hide menu by default on mobile */
+@media(max-width: 1000px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    nav ul.active {
+        right: 0;
+    }
+}
