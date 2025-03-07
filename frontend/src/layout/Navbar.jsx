@@ -1,19 +1,29 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-
-import './style.css'
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import './style.css';
 
 const Navbar = () => {
-  return (
-    <nav>
-        <ul>
-            <li className='home'><NavLink to='/'>Home</NavLink></li>
-            <li className='about'><NavLink to='/about'>About</NavLink></li>
-            <li className='gallery'><NavLink to='/gallery'>Gallery</NavLink></li>
-            <li className='book'><NavLink to='/book'>Book Now</NavLink></li>
-        </ul>
-    </nav>
-  )
-}
+  const [menuOpen, setMenuOpen] = useState(false);
 
-export default Navbar
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <nav style={{zIndex: 1000}}>
+      <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+        <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} size="lg" color="#000" />
+      </div>
+      <ul className={menuOpen ? 'active' : ''}>
+        <li><NavLink to='/' onClick={toggleMenu}>Home</NavLink></li>
+        <li><NavLink to='/about' onClick={toggleMenu}>About</NavLink></li>
+        <li><NavLink to='/gallery' onClick={toggleMenu}>Gallery</NavLink></li>
+        <li><NavLink to='/book' onClick={toggleMenu}>Book Now</NavLink></li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;
